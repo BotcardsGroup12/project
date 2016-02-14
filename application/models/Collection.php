@@ -8,6 +8,11 @@
 
 Class Collection extends CI_Model {
     
+    private $_token;
+    private $_piece;
+    private $_player;
+    private $_datetime;
+    
     function getToken() {
         return $this->_token;
     }

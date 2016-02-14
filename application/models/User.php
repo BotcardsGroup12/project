@@ -7,6 +7,11 @@
  */
 
 Class User extends CI_Model {
+    
+    private $_username;
+    private $_userpassword;
+    private $_usercash;
+    
     function getUsername() {
         return $this->_username;
     }
@@ -31,8 +36,7 @@ Class User extends CI_Model {
         $this->_usercash = $usercash;
     }
 
-        
-    function __construct() {
+        function __construct() {
         parent::__construct();
     }
 }

@@ -8,6 +8,11 @@
 
 Class Transaction extends CI_Model {
     
+    private $_series;
+    private $_description;
+    private $_frequency;
+    private $_value;
+    
     function getSeries() {
         return $this->_series;
     }

@@ -8,6 +8,11 @@
 
 Class Series extends CI_Model {
     
+    private $_datetime;
+    private $_player;
+    private $_series;
+    private $_trans;
+    
     function getDatetime() {
         return $this->_datetime;
     }
