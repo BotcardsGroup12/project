@@ -16,8 +16,8 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/gallery">Portfolio</a></li>
-                    <li><a href="/about">Assembly</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/assembly">Assembly</a></li>
                     <li style="float:right;"><a href="/login" >💀 Login</a></li>
                 </ul>                     
             </div>
