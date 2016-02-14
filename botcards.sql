@@ -155,7 +155,7 @@ INSERT INTO `transactions` (`DateTime`, `Player`, `Series`, `Trans`) VALUES
 --
 
 DROP TABLE IF EXISTS `users`;
-CREATE TABLE `wisebotler`.`users` (
+CREATE TABLE `users` (
   `username` VARCHAR(50) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
   `peanuts` DECIMAL(10,2) NULL,
