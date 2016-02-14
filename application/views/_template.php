@@ -9,17 +9,20 @@
         <link rel="stylesheet" type="text/css" media="all" href="css/lightbox.css" />
     </head>
     <body>
-        <div id="wrapper">
-            <div id="header">
-                <span class="myhead">Simple Image Gallery</span>
-                <span class="mynav">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="/about">About</a></li>
-                    </ul>
-                </span>
+        <div class="logo-container">
+            <a href="/"><img src="./img/logo.png"/></a>
+        </div>
+        <div class="menu-placeholder">
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/gallery">Portfolio</a></li>
+                    <li><a href="/about">Assembly</a></li>
+                    <li style="float:right;"><a href="/login" >💀 Login</a></li>
+                </ul>                     
             </div>
+        </div>        
+        <div id="wrapper">
             <div class="alone"></div>
             <div id="content">
                 {content}
