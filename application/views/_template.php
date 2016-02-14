@@ -16,8 +16,8 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/assembly">Assembly</a></li>
+                    <li><a href="/gallery">Portfolio</a></li>
+                    <li><a href="/about">Assembly</a></li>
                     <li style="float:right;"><a href="/login" >💀 Login</a></li>
                 </ul>                     
             </div>
@@ -26,10 +26,10 @@
             <div id="content">
                 {content}
             </div>
-            <div id="footer" class="span12">
-                Copyright &copy; 2014,  <a href="mailto:someone@somewhere.com">Me</a>.
-            </div>
         </div>
+        <div id="footer" class="span12">
+            Wise Botler by Pablo R. and Damian Kim <a href="https://github.com/BotcardsGroup12/project">Github</a>.
+        </div>        
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> 
         <script type="text/javascript" src="js/lightbox.min.js"></script> 
     </body>
