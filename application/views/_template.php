@@ -23,7 +23,6 @@
             </div>
         </div>        
         <div id="wrapper">
-            <div class="alone"></div>
             <div id="content">
                 {content}
             </div>

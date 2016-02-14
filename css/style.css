@@ -1,12 +1,17 @@
 /* CSS definition file containing sitestyle stylesheets */
 body {background-color: white;width:100%;}
 #wrapper {width: 60%; margin:4px auto;}
-
-
-.alone { clear:both; margin:10px;}
 #footer {font-family: Arial, Verdana, Helvetica ; font-size: 9pt; font-style:italic; text-align:center;}
 .oneimage {padding:1em; width:300px;text-align:center;}
 
+#content{
+    border: 1px;
+    border-color: brown;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 0px #888888;
+    padding: 0;
+    margin: -4px 0 0 0;
+}
 .logo-container{
     margin: 0px auto -7px auto;
     width: 60%;
@@ -36,6 +41,7 @@ body {background-color: white;width:100%;}
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    background-color: brown;
 }
 .menu-container a
 {
@@ -47,7 +53,7 @@ body {background-color: white;width:100%;}
 {
     list-style-type:none; 
     padding-top:12px;
-    font-size: 120%;
+    font-size: 130%;
 }
 .menu-container ul li
 {
@@ -55,10 +61,11 @@ body {background-color: white;width:100%;}
     margin-right:15px;
     color:white;
     list-style-type:none;
-    padding: 0.4%;
+    padding: 0.5%;
 }
 .menu-container ul li:hover
 {       
-    background-color: lightgrey;
-    border-radius: 5%;
+    background-color: brown;
+    border-radius: 0% 0% 7% 7%;
+    line-height:25px;
 }
