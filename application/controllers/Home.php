@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Gallery extends Application {
+class Home extends Application {
 
 	/**
-         * Gallery.php
+	 * Index Page for this controller.
 	 */
 	public function index()
 	{
-            $this->data['pagebody'] = 'gallery';
+            $this->data['pagebody'] = 'home';
             $this->render();
 	}
 }
