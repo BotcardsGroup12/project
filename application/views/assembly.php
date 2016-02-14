@@ -27,6 +27,6 @@
         <img src ="../img/11b-1.jpeg" alt="middle" height="64" width="128"><br />
         <img src ="../img/11c-2.jpeg" alt="bottom" height="64" width="128">
     </div>
-    <button>Assemble!</button>
+    <button class="abutton">Assemble!</button>
 </div>
 
