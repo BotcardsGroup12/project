@@ -18,6 +18,7 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/gallery">Portfolio</a></li>
                     <li><a href="/about">Assembly</a></li>
+                    <li style="float:right;"><a href="/login" >💀 Login</a></li>
                 </ul>                     
             </div>
         </div>        
