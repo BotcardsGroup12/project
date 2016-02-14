@@ -185,7 +185,9 @@ body {background-color: beige; width:100%; height:100%; float:left;}
     text-align: center;
 }
 
-.login .abutton{
+
+/* Button layour*/
+.abutton{
     border: 1px #3e433e;
     border-style: solid;
     border-radius: 5px;
@@ -195,11 +197,11 @@ body {background-color: beige; width:100%; height:100%; float:left;}
     background-color: #3e433e;
     text-align: center;
     text-decoration: none;
-    padding: 2px;
+    padding: 3px;
 }
-.login .abutton:hover{
+.abutton:hover{
     cursor: pointer;
 }
-.login .abutton:active{
+.abutton:active{
     background-color:grey;
 }
