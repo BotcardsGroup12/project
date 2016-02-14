@@ -1,6 +1,6 @@
 /* CSS definition file containing sitestyle stylesheets */
 html{height: 100%; width:100%; float:left;}
-body {background-color: white; width:100%; height:100%; float:left;}
+body {background-color: beige; width:100%; height:100%; float:left;}
 #wrapper {
     width: 70%; 
     height: 70%;
@@ -16,7 +16,7 @@ body {background-color: white; width:100%; height:100%; float:left;}
     padding: 1% 1% 0% 1%;
     height: 97%;
     overflow: auto;
-    
+    width: 98%;
 }
 .logo-container{
     margin: 0px auto -7px auto;
@@ -73,6 +73,133 @@ body {background-color: white; width:100%; height:100%; float:left;}
 .menu-container ul li:hover
 {       
     background-color: brown;
-    border-radius: 0% 0% 7% 7%;
+    border-radius: 0% 0% 4px 4px;
     line-height:25px;
+}
+
+/* Assembly page style*/
+.assembly{
+    text-align: center;
+    white-space: nowrap;
+}
+.assembly img{
+    width: 11%;
+}
+.assembly div{
+    margin-bottom: 25px;
+}
+.assembly h2{
+    background-color: brown;
+    color:white;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+.assembly input[type='radio']{
+    height:30px;
+    width:30px;
+    margin:0;
+    padding:0;
+}
+
+/* Homepage style */
+.home-box{
+    margin:1% 0 1% 0;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    float: left;
+    min-width: 48%;
+    font-size: 120%;
+}
+.home-box *{
+    margin:3%;
+}
+.home-box.player-list{
+    float:right;
+}
+.home-box h2{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.home-box table {
+  width: 100%;
+  margin:0;
+  padding: 0;
+  border-collapse: collapse;
+}
+.home-box td, .home-box th {
+  border: 1px solid black;
+  text-align: center;
+}
+.home-box tr:first-child th {
+  border-top: 0;
+}
+.home-box tr:last-child td {
+  border-bottom: 0;
+}
+.home-box tr td:first-child,
+.home-box tr th:first-child {
+  border-left: 0;
+}
+.home-box tr td:last-child,
+.home-box tr th:last-child {
+  border-right: 0;
+}
+
+/* Login style */
+.login{
+    margin:1% auto 1% auto;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 50%;
+    max-width: 300px;
+    font-size: 120%;
+    text-align: center;
+}
+.login *{
+    margin:3%;
+}
+
+.login form{
+    text-align: center;
+
+}
+.login form *{
+    margin:1%;
+    display:inline-block;
+}
+.login label{
+    text-align: right;
+    min-width: 15%;
+}
+.login h2{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.login .abutton{
+    border: 1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 50%;
+    font-size: 125%;
+    color: white;
+    background-color: #3e433e;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+}
+.login .abutton:hover{
+    cursor: pointer;
+}
+.login .abutton:active{
+    background-color:grey;
 }
