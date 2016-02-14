@@ -8,6 +8,9 @@
 
 Class Player extends CI_Model {
     
+    private $_player;
+    private $_peanuts;
+    
     function getPlayer() {
         return $this->_player;
     }
