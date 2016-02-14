@@ -6,8 +6,10 @@ class Portfolio extends Application {
 	/**
          * Gallery.php
 	 */
-	public function index()
+	public function index($playername = "Mickey")
 	{
+               
+ 
             $this->data['pagebody'] = 'portfolio';
             $this->render();
 	}

@@ -8,41 +8,41 @@
 
 Class Series extends CI_Model {
     
-    private $_datetime;
-    private $_player;
     private $_series;
-    private $_trans;
+    private $_description;
+    private $_frequency;
+    private $_value;
     
-    function getDatetime() {
-        return $this->_datetime;
-    }
-
-    function getPlayer() {
-        return $this->_player;
-    }
-
     function getSeries() {
         return $this->_series;
     }
 
-    function getTrans() {
-        return $this->_trans;
+    function getDescription() {
+        return $this->_description;
     }
 
-    function setDatetime($datetime) {
-        $this->_datetime = $datetime;
+    function getFrequency() {
+        return $this->_frequency;
     }
 
-    function setPlayer($player) {
-        $this->_player = $player;
+    function getValue() {
+        return $this->_value;
     }
 
     function setSeries($series) {
         $this->_series = $series;
     }
 
-    function setTrans($trans) {
-        $this->_trans = $trans;
+    function setDescription($description) {
+        $this->_description = $description;
+    }
+
+    function setFrequency($frequency) {
+        $this->_frequency = $frequency;
+    }
+
+    function setValue($value) {
+        $this->_value = $value;
     }
 
         
