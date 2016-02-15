@@ -6,11 +6,11 @@
  * and open the template in the editor.
  */
 
-Class Series extends MY_Model {
+Class Collections extends MY_Model {
     
     function __construct()
     {
-        parent::__construct('series', 'Series');
+        parent::__construct('collections','Token');
     }
 }
 

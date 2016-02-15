@@ -11,28 +11,12 @@
     <table>
         <tr>
             <th>Bot Series</th>
-            <th>N of Playing Cards</th>
-            <th>$ Peanuts</th>
+            <th>Description</th>
+            <th>Frequency</th>
+            <th>Value</th>
             <th>Acquired</th>
         </tr>
-        <tr>
-            <td>11</td>
-            <td>100</td>
-            <td>20</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td>50</td>
-            <td>50</td>
-            <td>0</td>
-        </tr>  
-        <tr>
-            <td>26</td>
-            <td>20</td>
-            <td>200</td>
-            <td>0</td>
-        </tr>
+        {botPieces}
     </table>
         
 </div>
