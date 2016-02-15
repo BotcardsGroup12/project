@@ -38,7 +38,7 @@
             </div>
         </div>
         <div id="footer" class="span12">
-            Wise Botler by Pablo R. and Damian K., A4850 Group 12<a href="https://github.com/BotcardsGroup12/project">Github</a>.
+            Wise Botler by Pablo R. and Damian K., A4850 Group 12 <a href="https://github.com/BotcardsGroup12/project">Github</a>.
         </div>        
 
     </body>

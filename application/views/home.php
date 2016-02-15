@@ -1,8 +1,13 @@
 <div class="home-box player-list">
-    <h2>Players List</h2>
-    <ul>
-        <li>Something</li>
-    </ul>
+    <h2>Players Stats</h2>
+    <table>
+        <tr>
+            <th>Player Name</th>
+            <th>Equity</th>
+            <th>Peanuts</th>
+        </tr>
+        {playersStats}
+    </table>
 </div>
 <div class="home-box game-panel">
     <h2>Game Status</h2>
