@@ -2,16 +2,16 @@
     <head>
         <title>{pagetitle}</title>
         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
-        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="css/lightbox.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/css/lightbox.css" />
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> 
         <script type="text/javascript" src="js/lightbox.min.js"></script> 
     </head>
     <body>
         <div class="logo-container">
-            <a href="/"><img src="./img/logo.gif"/></a>
+            <a href="/"><img src="/img/logo.gif"/></a>
         </div>
         <div class="menu-placeholder">
             <div class="menu-container">
