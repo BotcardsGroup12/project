@@ -1,18 +1,30 @@
 /* CSS definition file containing sitestyle stylesheets */
-body {background-color: white;width:100%;}
-#wrapper {width: 60%; margin:4px auto;}
-
-
-.alone { clear:both; margin:10px;}
+html{height: 100%; width:100%; float:left;}
+body {background-color: beige; width:100%; height:100%; float:left;}
+#wrapper {
+    width: 70%; 
+    height: 70%;
+    margin:0px auto;
+    border: 1px;
+    border-color: brown;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 0px #888888;
+    padding: 0;
+}
 #footer {font-family: Arial, Verdana, Helvetica ; font-size: 9pt; font-style:italic; text-align:center;}
-.oneimage {padding:1em; width:300px;text-align:center;}
-
+#content{
+    padding: 1% 1% 0% 1%;
+    height: 97%;
+    overflow: auto;
+    width: 98%;
+}
 .logo-container{
     margin: 0px auto -7px auto;
-    width: 60%;
+    width: 70%;
+    height: 20%;
 }
 .logo-container img{
-    height: 170px;
+    height: 100%;
 }
 .logo-container a{
     font-family: 'Lucida Console';
@@ -24,7 +36,7 @@ body {background-color: white;width:100%;}
     display:block;
     font-family:'PT Sans', sans-serif;
     font-size:14px;
-    height:56px;
+    height:55px;
     line-height:21px;
     position:relative;
     visibility:visible;
@@ -33,9 +45,10 @@ body {background-color: white;width:100%;}
 .menu-container
 {
     text-align: center;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
+    background-color: brown;
 }
 .menu-container a
 {
@@ -47,7 +60,7 @@ body {background-color: white;width:100%;}
 {
     list-style-type:none; 
     padding-top:12px;
-    font-size: 120%;
+    font-size: 130%;
 }
 .menu-container ul li
 {
@@ -55,10 +68,207 @@ body {background-color: white;width:100%;}
     margin-right:15px;
     color:white;
     list-style-type:none;
-    padding: 0.4%;
+    padding: 0.5%;
 }
 .menu-container ul li:hover
 {       
-    background-color: lightgrey;
-    border-radius: 5%;
+    background-color: brown;
+    border-radius: 0% 0% 4px 4px;
+    line-height:25px;
+}
+
+/* Assembly page style*/
+.assembly{
+    text-align: center;
+    white-space: nowrap;
+}
+.assembly img{
+    width: 11%;
+}
+.assembly div{
+    margin-bottom: 25px;
+}
+.assembly h2{
+    background-color: brown;
+    color:white;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+.assembly input[type='radio']{
+    height:30px;
+    width:30px;
+    margin:0;
+    padding:0;
+}
+
+/* Homepage style */
+.home-box{
+    margin:1% 0 1% 0;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    float: left;
+    min-width: 48%;
+    font-size: 120%;
+}
+.home-box *{
+    margin:3%;
+}
+.home-box.player-list{
+    float:right;
+}
+.home-box h2{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.home-box table {
+    width: 100%;
+    margin:0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.home-box th {
+    background-color: #ffe9c7 ;
+}
+.home-box td, .home-box th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.home-box tr:first-child th {
+    border-top: 0;
+}
+.home-box tr:last-child td {
+    border-bottom: 0;
+}
+.home-box tr td:first-child,
+.home-box tr th:first-child {
+    border-left: 0;
+}
+.home-box tr td:last-child,
+.home-box tr th:last-child {
+    border-right: 0;
+}
+
+/* Login style */
+.login{
+    margin:1% auto 1% auto;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 50%;
+    max-width: 300px;
+    font-size: 120%;
+    text-align: center;
+}
+.login *{
+    margin:3%;
+}
+
+.login form{
+    text-align: center;
+
+}
+.login form *{
+    margin:1%;
+    display:inline-block;
+}
+.login label{
+    text-align: right;
+    min-width: 15%;
+}
+.login h2{    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+
+}
+
+
+/* Button layout*/
+.abutton{
+    border: 1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 50%;
+    font-size: 125%;
+    color: white;
+    background-color: #3e433e;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+}
+.abutton:hover{
+    cursor: pointer;
+}
+.abutton:active{
+    background-color:grey;
+}
+
+/*Portfolio style*/
+
+.playerinfo{
+    margin:1% 0 1% 0;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 100%;
+    font-size: 120%;
+}
+.playerinfo *{
+    margin: 0;
+}
+
+.playerinfo h3{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.activity{
+    margin:1% 0 1% 0;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 100%;
+    font-size: 120%;
+}
+
+.activity h3{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.activity ul{
+    text-align: center;
+}
+
+.inventory{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.switchplayer{
+    margin: auto;
+    width: 40%;
+    float: none;
+}
+
+.switchplayer select{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
 }
