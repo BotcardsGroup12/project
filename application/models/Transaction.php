@@ -8,41 +8,41 @@
 
 Class Transaction extends CI_Model {
     
+    private $_datetime;
+    private $_player;
     private $_series;
-    private $_description;
-    private $_frequency;
-    private $_value;
+    private $_trans;
     
+    function getDatetime() {
+        return $this->_datetime;
+    }
+
+    function getPlayer() {
+        return $this->_player;
+    }
+
     function getSeries() {
         return $this->_series;
     }
 
-    function getDescription() {
-        return $this->_description;
+    function getTrans() {
+        return $this->_trans;
     }
 
-    function getFrequency() {
-        return $this->_frequency;
+    function setDatetime($datetime) {
+        $this->_datetime = $datetime;
     }
 
-    function getValue() {
-        return $this->_value;
+    function setPlayer($player) {
+        $this->_player = $player;
     }
 
     function setSeries($series) {
         $this->_series = $series;
     }
 
-    function setDescription($description) {
-        $this->_description = $description;
-    }
-
-    function setFrequency($frequency) {
-        $this->_frequency = $frequency;
-    }
-
-    function setValue($value) {
-        $this->_value = $value;
+    function setTrans($trans) {
+        $this->_trans = $trans;
     }
 
         

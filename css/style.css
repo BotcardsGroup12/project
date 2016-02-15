@@ -177,12 +177,12 @@ body {background-color: beige; width:100%; height:100%; float:left;}
     text-align: right;
     min-width: 15%;
 }
-.login h2{
-    margin:0;
+.login h2{    margin:0;
     padding:0;
     color:white;
     background-color:brown;
     text-align: center;
+
 }
 
 
@@ -204,4 +204,72 @@ body {background-color: beige; width:100%; height:100%; float:left;}
 }
 .abutton:active{
     background-color:grey;
+}
+
+/*Portfolio style*/
+
+.playerinfo{
+    margin:1% 0 1% 0;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 100%;
+    font-size: 120%;
+}
+
+.playerinfo h3{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.activity{
+    margin:1% 0 1% 0;
+    border:1px #3e433e;
+    border-style: solid;
+    border-radius: 5px;
+    min-width: 100%;
+    font-size: 120%;
+}
+
+.activity h3{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.activity ul{
+    text-align: center;
+}
+
+.inventory{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inventory td{
+    padding: 1em;
+}
+
+.switchplayer{
+    margin: auto;
+    width: 40%;
+    font-size: 120%;
+}
+.switchplayer h3{
+    margin:0;
+    padding:0;
+    color:white;
+    background-color:brown;
+    text-align: center;
+}
+
+.switchplayer select{
+margin: auto;
+width: 100%;
+text-align: center;
 }
