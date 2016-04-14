@@ -11,7 +11,7 @@
 </div>
 <div class="home-box game-panel">
     <h2>Game Status</h2>
-    <h3>Games status currently not available</h3>
+    {gameStatus}
     <h2>Bot Pieces</h2>
     <table>
         <tr>
