@@ -20,15 +20,17 @@
                     <li><a href="/portfolio">Portfolio</a></li>
                     <li><a href="/assembly">Assemble</a></li>
                     <?php
-                    if (!isset($_SESSION['username']))
-                    {
-                        echo '<li style="float:right;"><a href="/login" >💀 Login</a></li>';
+                    if (!isset($_SESSION['logged_in'])) {
+                        echo '<li style="float:right;"><a href="/register">Register</a></li>'
+                        . '<li style="float:right;"><a href="/login" >💀 Login</a></li>';
+                    } else {
+                        echo '<li style="float:right;"><a href="home/logout">💀 Logout </a></li>';
                     }
-                    else
-                    {
-                        echo '<li style="float:right;"><a href="/login">💀 Hi '.$_SESSION["username"].', logout </a></li>';
+                    if(isset($_SESSION['status']) && $_SESSION['status'] == 'admin') {
+                        echo '<li style="float:right;"><a href="/admin" >Admin</a></li>';
                     }
                     ?>
+
                 </ul>                
             </div>
         </div>        

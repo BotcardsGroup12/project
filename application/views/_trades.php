@@ -5,5 +5,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 ?>
 {collection}
-    <li>{tradeEntry}</td>
+<li>{tradeEntry}</td>
 {/collection}
