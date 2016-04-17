@@ -5,9 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 ?>
 {collection}
-    <tr>
-        <td><img src ="/img/{code}.jpeg" alt="avatar" width="96" height="48"></td>
-        <td>{Series}</td>
-        <td>{Quantity}</td>
-    </tr>
+<tr>
+    <td><img src ="/img/{code}.jpeg" alt="avatar" width="96" height="48"></td>
+    <td>{Series}</td>
+    <td>{Quantity}</td>
+</tr>
 {/collection}

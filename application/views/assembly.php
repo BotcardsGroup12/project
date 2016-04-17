@@ -30,21 +30,21 @@
     <button class="abutton">Assemble!</button>
 </div>
 <script type="text/javascript">
-$(document).ready(function () {
-    $("input[type='radio'").click(function () {
-        
-        switch($(this).attr("name"))
-        {
-            case "top":
-                $("#imgTop").attr("src", "/img/" + $(this).val()  + "-0.jpeg");
-                break;
-            case "middle":
-                $("#imgMiddle").attr("src", "/img/" + $(this).val()  + "-1.jpeg");
-                break;
-            case "bottom":
-                $("#imgBottom").attr("src", "/img/" + $(this).val()  + "-2.jpeg");
-                break;                
-        }
+    $(document).ready(function () {
+        $("input[type='radio'").click(function () {
+
+            switch ($(this).attr("name"))
+            {
+                case "top":
+                    $("#imgTop").attr("src", "/img/" + $(this).val() + "-0.jpeg");
+                    break;
+                case "middle":
+                    $("#imgMiddle").attr("src", "/img/" + $(this).val() + "-1.jpeg");
+                    break;
+                case "bottom":
+                    $("#imgBottom").attr("src", "/img/" + $(this).val() + "-2.jpeg");
+                    break;
+            }
+        });
     });
-});
 </script>

@@ -89,7 +89,29 @@ class Home extends Application {
         $result = file_get_contents($url, false, $context);
         if ($result === FALSE) { /* Handle error */
         }
-        $_SESSION['token'] = $result;
+        //$_SESSION['token'] = simplexml_load_file($result)->agent->token;
+        $sxml = simplexml_load_string($result);
+        $_SESSION['token'] = (string)$sxml->token;
+        redirect('home');
+    }
+
+    function buy_card() {
+        $url = 'http://botcards.jlparry.com/buy';
+        $data = array(
+            'team' => 'B12',
+            'token' =>  $_SESSION['token'],
+            'player' => $_SESSION['username']
+        );
+        $options = array(
+            'http' => array(
+                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method' => 'POST',
+                'content' => http_build_query($data)
+            )
+        );
+        $context = stream_context_create($options);
+        $result = file_get_contents($url, false, $context);
+        print_r($result);
     }
 
 }

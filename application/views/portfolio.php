@@ -13,7 +13,7 @@
             <th>Quantity</th>
         </tr>
         {inventory}
-     </table>
+    </table>
 </div>
 <div class="home-box activity">
     <h2>Trading Activity</h2>

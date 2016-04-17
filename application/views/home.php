@@ -23,6 +23,6 @@
         </tr>
         {botPieces}
     </table>
-        
+
 </div>
 <br />

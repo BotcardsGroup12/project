@@ -17,8 +17,8 @@ class Register extends Application {
 
     public function do_register() {
         if ($this->input->post('register')) {//$_POST["register"];
-            $this->load->model('Users'); //loads the user_model.php file in models folder
-            if ($this->Users->add_user()) {
+            $this->load->model('Players'); //loads the user_model.php file in models folder
+            if ($this->Players->add_user()) {
                 echo "<script>
 alert('Registered Successfully');
 window.location.href='../home';
