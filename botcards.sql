@@ -44,33 +44,6 @@ CREATE TABLE IF NOT EXISTS `collections` (
 
 INSERT INTO `collections` (`Token`, `Piece`, `Player`, `Datetime`) VALUES
 ('1BB155', '11b-2', 'George', '2016.02.01-09:01:00'),
-('1E654C', '11b-2', 'Mickey', '2016.02.01-09:01:02'),
-('1DE9BB', '11b-2', 'Donald', '2016.02.01-09:01:04'),
-('1BE8FA', '11c-0', 'George', '2016.02.01-09:01:06'),
-('135745', '11a-0', 'Donald', '2016.02.01-09:01:08'),
-('1A2EE5', '11c-0', 'Donald', '2016.02.01-09:01:10'),
-('11F084', '11a-1', 'Donald', '2016.02.01-09:01:12'),
-('1ADF71', '11a-1', 'George', '2016.02.01-09:01:14'),
-('1C292C', '11b-0', 'George', '2016.02.01-09:01:16'),
-('1E095A', '11c-2', 'Donald', '2016.02.01-09:01:18'),
-('132956', '11c-0', 'George', '2016.02.01-09:01:20'),
-('1359B6', '11a-0', 'Mickey', '2016.02.01-09:01:22'),
-('139244', '11c-0', 'George', '2016.02.01-09:01:24'),
-('12072C', '11c-0', 'Henry', '2016.02.01-09:01:26'),
-('1C58FB', '11c-2', 'Donald', '2016.02.01-09:01:28'),
-('11F0C5', '11b-1', 'George', '2016.02.01-09:01:30'),
-('1AB11B', '11a-2', 'Henry', '2016.02.01-09:01:32'),
-('1BB8CC', '11b-2', 'Henry', '2016.02.01-09:01:34'),
-('14338A', '11c-0', 'George', '2016.02.01-09:01:36'),
-('1D17DE', '11a-0', 'George', '2016.02.01-09:01:38'),
-('17DC94', '11b-1', 'George', '2016.02.01-09:01:40'),
-('1E5222', '11c-2', 'Donald', '2016.02.01-09:01:42'),
-('19573B', '11a-2', 'Donald', '2016.02.01-09:01:44'),
-('150417', '11b-2', 'Mickey', '2016.02.01-09:01:46'),
-('1CA087', '11c-1', 'Mickey', '2016.02.01-09:01:48'),
-('154281', '11c-0', 'Donald', '2016.02.01-09:01:50'),
-('10DA3E', '11a-1', 'Mickey', '2016.02.01-09:01:52'),
-('141117', '11c-2', 'Henry', '2016.02.01-09:01:54'),
 ('12268C', '11b-0', 'Mickey', '2016.02.01-09:01:56');
 
 -- --------------------------------------------------------
@@ -84,9 +57,9 @@ CREATE TABLE `players`
 (
     Player VARCHAR(6),
     Peanuts INT,
-    Username VARCHAR(15) not null,
+    Username VARCHAR(20) not null,
     Password VARCHAR(20) not null,
-    Avatar VARCHAR(20),
+    Avatar VARCHAR(100),
     Status VARCHAR(6) not null
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -95,9 +68,9 @@ CREATE TABLE `players`
 --
 
 INSERT INTO `players` (`Player`, `Peanuts`, `Username`, `Password`, `Avatar`, `Status`) VALUES
-('admin',  9999, 'admin', 'admin', 1, 'admin'),
-('Pablo', 200, 'pablo', 'pablo', 1, 'player'),
-('Damian', 500, 'damian', 'damian', 1, 'player');
+('admin',  9999, 'admin', 'admin', 'admin.png', 'admin'),
+('Pablo', 200, 'pablo', 'pablo', 'admin.png', 'player'),
+('Damian', 500, 'damian', 'damian', 'admin.png'	, 'player');
 
 -- --------------------------------------------------------
 
@@ -143,16 +116,6 @@ CREATE TABLE IF NOT EXISTS `transactions` (
 INSERT INTO `transactions` (`DateTime`, `Player`, `Series`, `Trans`) VALUES
 ('2016.02.01-09:01:00', 'Mickey', '11', 'sell'),
 ('2016.02.01-09:01:05', 'Henry', 'x', 'buy'),
-('2016.02.01-09:01:10', 'Mickey', 'x', 'buy'),
-('2016.02.01-09:01:15', 'Donald', '13', 'sell'),
-('2016.02.01-09:01:20', 'Donald', 'x', 'buy'),
-('2016.02.01-09:01:25', 'Donald', 'x', 'buy'),
-('2016.02.01-09:01:30', 'Donald', 'x', 'buy'),
-('2016.02.01-09:01:35', 'Donald', 'x', 'buy'),
-('2016.02.01-09:01:40', 'Henry', 'x', 'buy'),
-('2016.02.01-09:01:45', 'Donald', '22', 'sell'),
-('2016.02.01-09:01:50', 'George', '11', 'sell'),
-('2016.02.01-09:01:55', 'George', 'x', 'buy'),
 ('2016.02.01-09:01:60', 'George', 'x', 'buy');
 --
 -- Table structure for table `users`

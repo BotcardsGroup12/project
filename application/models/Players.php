@@ -12,14 +12,14 @@ Class Players extends MY_Model {
         parent::__construct('players', 'Player');
     }
 
-    public function add_user() {
+    public function add_user($avatarFileName) {
         $data = array(
             'username' => $this->input->post('username'),
             'player' => $this->input->post('nickname'),
             'password' => $this->input->post('password'),
             'peanuts' => 200,
             'status' => "player",
-            'avatar' => $this->input->post('avatar')
+            'avatar' => (string)$avatarFileName
         );
         $this->db->insert('players', $data);
         return true;

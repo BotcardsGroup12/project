@@ -22,6 +22,7 @@ class Application extends CI_Controller {
         parent::__construct();
         $this->data = array();
         $this->data['pagetitle'] = 'Wise Botler';
+        $this->load->helper('url'); 
     }
 
     /**

@@ -2,6 +2,7 @@
     <h2>Players Stats</h2>
     <table>
         <tr>
+            <th>Avatar</th>
             <th>Player Name</th>
             <th>Equity</th>
             <th>Peanuts</th>
