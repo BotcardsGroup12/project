@@ -55,7 +55,7 @@ $autoload['packages'] = array(APPPATH . 'third_party');
   |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
  */
 
-$autoload['libraries'] = array('database','parser', 'session');
+$autoload['libraries'] = array('database', 'parser', 'session');
 
 
 /*
@@ -103,18 +103,18 @@ $autoload['language'] = array();
 
 
 /*
-| -------------------------------------------------------------------
-|  Auto-load Models
-| -------------------------------------------------------------------
-| Prototype:
-|
-|	$autoload['model'] = array('first_model', 'second_model');
-|
-| You can also supply an alternative model name to be assigned
-| in the controller:
-|
-|	$autoload['model'] = array('first_model' => 'first');
-*/
+  | -------------------------------------------------------------------
+  |  Auto-load Models
+  | -------------------------------------------------------------------
+  | Prototype:
+  |
+  |	$autoload['model'] = array('first_model', 'second_model');
+  |
+  | You can also supply an alternative model name to be assigned
+  | in the controller:
+  |
+  |	$autoload['model'] = array('first_model' => 'first');
+ */
 $autoload['model'] = array('players', 'series', 'collections', 'transactions');
 
 

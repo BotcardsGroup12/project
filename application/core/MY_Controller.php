@@ -7,30 +7,30 @@
  */
 class Application extends CI_Controller {
 
+    public $serverUrl = "http://bootcards.server/"; 
     protected $data = array();      // parameters for view components
     protected $id;                  // identifier for our content
-    protected $choices = array(     // our menu navbar
-	'Home' => '/', 'Portfolio' => '/portfolio', 'Assembly' => '/assembly'
+    protected $choices = array(// our menu navbar
+        'Home' => '/', 'Portfolio' => '/portfolio', 'Assembly' => '/assembly'
     );
 
     /**
      * Constructor.
      * Establish view parameters & load common helpers
      */
-    function __construct()
-    {
+    function __construct() {
         parent::__construct();
         $this->data = array();
         $this->data['pagetitle'] = 'Wise Botler';
+        $this->load->helper('url'); 
     }
 
     /**
      * Render this page
      */
-    function render()
-    {
+    function render() {
         $this->load->library('session');
-	$this->data['menubar'] = build_menu_bar($this->choices);
+        $this->data['menubar'] = build_menu_bar($this->choices);
         $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
         $this->data['data'] = &$this->data;
         $this->parser->parse('_template', $this->data);
