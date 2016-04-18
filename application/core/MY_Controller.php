@@ -7,6 +7,7 @@
  */
 class Application extends CI_Controller {
 
+    public $serverUrl = "http://bootcards.server/"; 
     protected $data = array();      // parameters for view components
     protected $id;                  // identifier for our content
     protected $choices = array(// our menu navbar

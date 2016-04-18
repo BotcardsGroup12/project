@@ -10,8 +10,8 @@ class Home extends Application {
     public function index() {
         $this->data['pagebody'] = 'home';
 
-//Load Game Status
-        $url = 'http://botcards.jlparry.com/status';
+        //Load Game Status
+        $url =  $this->serverUrl.'status';
         $sxml = simplexml_load_file($url);
         $status = $sxml->state;
         $this->data['current'] = $sxml->current;
@@ -26,8 +26,7 @@ class Home extends Application {
 
         $this->data['gameStatus'] = $this->parser->parse('_gameStatus', $this->data, true);
 
-// Load bot pieces summary
-
+        // Load bot pieces summary
         $seriesTab = $this->series->all();
         $series = array();
         foreach ($seriesTab as $row) {
@@ -72,7 +71,7 @@ class Home extends Application {
 
     function agentregister() {
 
-        $url = 'http://botcards.jlparry.com/register';
+        $url = $this->serverUrl.'register';
         $data = array(
             'team' => 'B12',
             'name' => 'lol',
@@ -96,7 +95,7 @@ class Home extends Application {
     }
 
     function buy_card() {
-        $url = 'http://botcards.jlparry.com/buy';
+        $url = $this->serverUrl.'buy';
         $data = array(
             'team' => 'B12',
             'token' =>  $_SESSION['token'],

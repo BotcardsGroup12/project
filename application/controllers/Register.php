@@ -16,18 +16,28 @@ class Register extends Application {
     }
 
     public function do_register() {
-        if ($this->input->post('register')) {//$_POST["register"];
-            $this->load->model('Players'); //loads the user_model.php file in models folder
+        if ($this->input->post('register')) {  //$_POST["register"];
+            $this->load->model('Players');     //loads the user_model.php file in models folder
             if ($this->Players->add_user()) {
+                
+                $sess_array = array(
+                    'username' => $this->input->post('username'),
+                    'status' => 'player'
+                );
+                $this->session->set_userdata('logged_in', $sess_array);
+
+                $_SESSION['status'] = $sess_array['status'];
+                $_SESSION['username'] = $sess_array['username'];                
+                
                 echo "<script>
-alert('Registered Successfully');
-window.location.href='../home';
-</script>";
+                        alert('Registered Successfully');
+                        window.location.href='../home';
+                      </script>";
             } else {
                 "<script>
-alert('Register Failed');
-window.location.href='../home';
-</script>";
+                    alert('Register Failed');
+                    window.location.href='../home';
+                 </script>";
             }
         }
     }

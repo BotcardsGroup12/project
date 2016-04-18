@@ -17,7 +17,7 @@ Class Players extends MY_Model {
             'username' => $this->input->post('username'),
             'player' => $this->input->post('nickname'),
             'password' => $this->input->post('password'),
-            'peanuts' => 0,
+            'peanuts' => 200,
             'status' => "player",
             'avatar' => $this->input->post('avatar')
         );

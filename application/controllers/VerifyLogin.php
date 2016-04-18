@@ -17,15 +17,15 @@ class VerifyLogin extends CI_Controller {
         if ($this->form_validation->run() == FALSE) {
             //Field validation failed.  User redirected to login page
             echo "<script>
-alert('Login Failed');
-window.location.href='../login';
-</script>";
+                    alert('Login Failed');
+                    window.location.href='../login';
+                    </script>";
         } else {
             //Go to private area
             echo "<script>
-alert('Login Successful');
-window.location.href='../home';
-</script>";
+                    alert('Login Successful');
+                    window.location.href='../home';
+                    </script>";
         }
     }
 

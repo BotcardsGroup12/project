@@ -80,20 +80,24 @@ INSERT INTO `collections` (`Token`, `Piece`, `Player`, `Datetime`) VALUES
 --
 
 DROP TABLE IF EXISTS `players`;
-CREATE TABLE IF NOT EXISTS `players` (
-  `Player` varchar(6) DEFAULT NULL,
-  `Peanuts` int(3) DEFAULT NULL
+CREATE TABLE `players`
+(
+    Player VARCHAR(6),
+    Peanuts INT,
+    Username VARCHAR(15) not null,
+    Password VARCHAR(20) not null,
+    Avatar VARCHAR(20),
+    Status VARCHAR(6) not null
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `players`
 --
 
-INSERT INTO `players` (`Player`, `Peanuts`) VALUES
-('Mickey', 200),
-('Donald', 35),
-('George', 500),
-('Henry', 100);
+INSERT INTO `players` (`Player`, `Peanuts`, `Username`, `Password`, `Avatar`, `Status`) VALUES
+('admin',  9999, 'admin', 'admin', 1, 'admin'),
+('Pablo', 200, 'pablo', 'pablo', 1, 'player'),
+('Damian', 500, 'damian', 'damian', 1, 'player');
 
 -- --------------------------------------------------------
 
